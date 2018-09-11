@@ -39,5 +39,15 @@ namespace WalkintheWoods.Factories	//you can leave as is, or change to your own 
                 }
             }
         }
+        public List<Trails> GetoneTrails(){
+            using (IDbConnection dbConnection = Connection){
+                using(IDbCommand command = dbConnection.CreateCommand()){
+                    string query = "SELECT * FROM trails WHERE id = 1";
+                    dbConnection.Open();
+                    return dbConnection.Query<Trails>(query).ToList();
+
+                }
+            }
+        }
     }
 }

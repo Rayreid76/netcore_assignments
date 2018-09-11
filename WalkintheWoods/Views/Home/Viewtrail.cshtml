@@ -20,9 +20,10 @@
             border-radius: 0;
         }
     </style>
-    <title>Trail Guide</title>
+    <title>Document</title>
 </head>
 <body>
+    @model Trails
     <nav class="navbar navbar-inverse">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,45 +34,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Trail Guide</a>
+          <a class="navbar-brand" href="/">Trail Guide</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="">HOME <span class="sr-only">(current)</span></a></li>
-            <li><a href="Addtrail">ADD TRAIL</a></li>
-            
+            <li class="active"><a href="/">HOME <span class="sr-only">(current)</span></a></li>            
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-  <div class="jumbotron text-center">
-    <div class="container">
-      <h1>Welcome To My Trail Guide</h1>
-      <p>Where your adventure starts</p>
-      <a href="Addtrail" class="btn btn-primary">Add a Trail</a>
-    </div>
-  </div>
-  <div class="container">
-    <table class="table table-striped table-bordered table-hover table-condensed">
-      <tr>
-        <th>Trail Name</th>
-        <th>Elevation Change</th>
-        <th>Total Miles</th>
-      </tr>
-      @foreach(var trail in ViewBag.Table)
-      {
-        <tr>
-          
-          <td><a href="/trail/@trail.ID">@trail.Name</a></td>
-          <td>@trail.Elevation feet</td>
-          <td>@trail.Miles miles</td>
-        </tr>
-      }
-    </table>
-  </div>
-
+    
+    
+    
+        <div class="container">
+            <h1>Welcome to @ViewBag.trail.Name</h1>
+        </div>
+    
 
 
     <environment include="Development">
@@ -94,5 +74,6 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
+    
 </body>
 </html>

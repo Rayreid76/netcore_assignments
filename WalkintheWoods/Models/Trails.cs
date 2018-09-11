@@ -5,13 +5,14 @@ namespace WalkintheWoods.Models
 {
     public class Trails
     {
+        public int ID {get; set;}
         [Required]
         [MinLength(4, ErrorMessage = "Not reached minimum length")]
         public string Name {get;set;}
         [Required]
         [DataType(DataType.Text)]
         [MinLength(10, ErrorMessage = "Not reached minimum length")]
-        public string Discription {get;set;}
+        public string Description {get;set;}
         [Required]
         [Range(0, Int16.MaxValue, ErrorMessage = "No Negative Numbers")]
         public double Miles {get;set;}

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WalkintheWoods.Models;
 using WalkintheWoods.Factories;
+using System.Linq;
 
 namespace WalkintheWoods
 {
@@ -17,7 +18,7 @@ namespace WalkintheWoods
         public IActionResult Index(){
             ViewBag.Table = trailfactory.GetTrails();
             
-            Console.WriteLine(ViewBag.Table);
+            
             return View();
         }
         [HttpGet("Addtrail")]
@@ -37,6 +38,12 @@ namespace WalkintheWoods
                 return View("AddTrail");
             }
         
+        }
+        [HttpGet("trail/{id}")]
+        public IActionResult viewTrail(Trails trail)
+        {
+            ViewBag.trail = trailfactory.GetoneTrails();
+            return View("Viewtrail");
         }
     }
 }
