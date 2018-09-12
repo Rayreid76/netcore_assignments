@@ -42,7 +42,7 @@ namespace WalkintheWoods
         [HttpGet("trail/{id}")]
         public IActionResult viewTrail(Trails trail)
         {
-            ViewBag.trail = trailfactory.GetoneTrails();
+            trailhead = trailfactory.GetoneTrails();
             return View("Viewtrail");
         }
     }
