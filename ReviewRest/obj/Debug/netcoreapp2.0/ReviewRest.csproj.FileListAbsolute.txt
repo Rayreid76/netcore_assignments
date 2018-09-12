@@ -1,0 +1,11 @@
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\bin\Debug\netcoreapp2.0\ReviewRest.deps.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\bin\Debug\netcoreapp2.0\ReviewRest.runtimeconfig.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\bin\Debug\netcoreapp2.0\ReviewRest.runtimeconfig.dev.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\bin\Debug\netcoreapp2.0\ReviewRest.dll
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\bin\Debug\netcoreapp2.0\ReviewRest.pdb
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\obj\Debug\netcoreapp2.0\ReviewRest.csprojResolveAssemblyReference.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\obj\Debug\netcoreapp2.0\ReviewRest.csproj.CoreCompileInputs.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\obj\Debug\netcoreapp2.0\ReviewRest.AssemblyInfoInputs.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\obj\Debug\netcoreapp2.0\ReviewRest.AssemblyInfo.cs
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\obj\Debug\netcoreapp2.0\ReviewRest.dll
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\ReviewRest\obj\Debug\netcoreapp2.0\ReviewRest.pdb
