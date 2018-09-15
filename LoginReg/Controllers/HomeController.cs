@@ -50,6 +50,34 @@ namespace LoginReg.Controllers
                 return View("Index");
             }
         }
+        [HttpPost("GetUser")]
+        public IActionResult GetUser(Users log)
+        {
+            //grab user with email
+            Users loginUser = _context.Users.SingleOrDefault(user => user.Email == log.Email);
+            if(loginUser != null)
+            {
+                //compare passwords
+                var Hasher = new PasswordHasher<Users>();
+                var result = Hasher.VerifyHashedPassword(log, loginUser.Password, log.Password);
+                if(result > 0)
+                {
+                    return RedirectToAction("Dashboard");
+                }
+                else
+                {
+                    return View("Login");
+                }
+            }
+            else
+            {
+                return View("Login");
+            }
+        }
+        [HttpGet("Dashboard")]
+        public IActionResult Dashboard(){
+            return View("Dashboard");
+        }
 
         
     }
