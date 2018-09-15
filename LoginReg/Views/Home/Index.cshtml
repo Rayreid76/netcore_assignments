@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Users
+<div class="jumbotron">
+    <div class="text-center">
+        <h1>Registration</h1>
+        <p>Please registure below</p>
+        <p>If already registure <a href="Login"><button class="btn btn-primary">Login</button></a></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <form asp-action="Create" asp-controller="Home" method="POST">
+            <div class="form-group">
+                
+                    <span asp-validation-for="FirstName" class="label label-danger"></span><br>
+                
+                <label for="FirstName">First Name:</label>
+                <input asp-for="FirstName" class="form-control">
+            </div>
+            <div class="form-group">
+                <div >
+                    <span asp-validation-for="LastName" class="label label-danger"></span><br>
+                </div>
+                
+                <label for="LastName">Last Name:</label>
+                <input asp-for="LastName" class="form-control">
+            </div>
+            <div class="form-group">
+                <div >
+                    <span asp-validation-for="Email" class="label label-danger"></span><br>
+                </div>
+                
+                <label for="Email">Email:</label>
+                <input asp-for="Email" class="form-control">
+            </div>
+            <div class="form-group">
+                <div >
+                    <span asp-validation-for="Password" class="label label-danger"></span><br>
+                </div>
+                
+                <label for="Password">Password:</label>
+                <input asp-for="Password" class="form-control">
+            </div>
+            <div class="form-group">
+                <div >
+                    <span asp-validation-for="ConfirmPassword" class="label label-danger"></span><br>
+                </div>
+                
+                <label for="ConfirmPassword">ConfirmPassword:</label>
+                <input asp-for="ConfirmPassword" class="form-control">
+            </div>
+            <input type="submit" value="Registure" class="btn btn-primary">
+        </form>
+    </div>
+    <div class="col-md-3"></div>
+
+</div>
