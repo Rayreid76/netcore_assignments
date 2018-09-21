@@ -1,0 +1,11 @@
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\bin\Debug\netcoreapp2.0\Bank.deps.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\bin\Debug\netcoreapp2.0\Bank.runtimeconfig.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\bin\Debug\netcoreapp2.0\Bank.runtimeconfig.dev.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\bin\Debug\netcoreapp2.0\Bank.dll
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\bin\Debug\netcoreapp2.0\Bank.pdb
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\obj\Debug\netcoreapp2.0\Bank.csprojResolveAssemblyReference.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\obj\Debug\netcoreapp2.0\Bank.csproj.CoreCompileInputs.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\obj\Debug\netcoreapp2.0\Bank.AssemblyInfoInputs.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\obj\Debug\netcoreapp2.0\Bank.AssemblyInfo.cs
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\obj\Debug\netcoreapp2.0\Bank.dll
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Bank\obj\Debug\netcoreapp2.0\Bank.pdb
