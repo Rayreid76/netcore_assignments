@@ -4,13 +4,17 @@ using Bank.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace Bank.Controllers
 {
     public class HomeController : Controller
     {
-        private object dbContext;
-        public HomeController(BankContext _context) => dbContext = _context;
+        private BankContext dbContext;
+        public HomeController(BankContext context)
+        {
+            dbContext = context;
+        }
 
         [HttpGet("")]
         public IActionResult Index()
@@ -22,6 +26,21 @@ namespace Bank.Controllers
         {
             if(ModelState.IsValid)
             {
+                Person userEmail = dbContext.Users.FirstOrDefault(pp => pp.Email == user.Email);
+
+                if(userEmail == null)
+                {
+                    ModelState.AddModelError("Email", "Invalid Email/Password");
+                    return View("Index");
+                }
+                PasswordHasher<LoginUser> hasher = new PasswordHasher<LoginUser>();
+                var result = hasher.VerifyHashedPassword(user, userEmail.Password, user.Password);
+                if(result == PasswordVerificationResult.Failed)
+                {
+                    ModelState.AddModelError("Email", "Invalid Email/Password");
+                    return View("Index");
+                }
+                HttpContext.Session.SetInt32("iduser", userEmail.UserId);
                 return RedirectToAction("Dashboard");
             }
             else
@@ -32,9 +51,17 @@ namespace Bank.Controllers
         [HttpGet("Dashboard")]
         public IActionResult Dashboard()
         {
+            int? validate = HttpContext.Session.GetInt32("iduser");
+            if(validate == null)
+            {
+                return RedirectToAction("Registure");
+            }
+            Person Banker = dbContext.Users.FirstOrDefault(pp => pp.UserId == validate);
+
+            ViewBag.banker = Banker;
             return View("Dashboard");
         }
-        [HttpGet("logout")]
+        [HttpGet("Logout")]
         public IActionResult Logout()
         {
             return View("Index");
@@ -44,21 +71,40 @@ namespace Bank.Controllers
         {
             return View("Registure");
         }
-        [HttpPost("record")]
+        [HttpPost("Record")]
         public IActionResult Record(Person log)
         {
-            if(dbContext.Users.Any(pp => pp.email == log.Email))
+            if(ModelState.IsValid)
             {
-                ModelState.AddModelError("Email", "Email Exists");
-                return View("Index");
-            }
-            PasswordHasher<User> hasher = new PasswordHasher<User>();
-            log.Password = hasher.HashPassword(User, log.Password);
+                if(dbContext.Users.Any(pp => pp.Email == log.Email))
+                {
+                    return View("Registure");
+                }
+                PasswordHasher<Person> hasher = new PasswordHasher<Person>();
+                log.Password = hasher.HashPassword(log, log.Password);
 
-            dbContext.Users.Add(log);
-            dbContext.Save();
-            return RedirectToAction("Index");
+                dbContext.Users.Add(log);
+                dbContext.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("Registure");
+            }
             
+        }
+        [HttpPost("Deposit")]
+        public IActionResult Deposit(Accounts money)
+        {
+            if(ModelState.IsValid)
+            {
+                List<Person> red = dbContext.Users.Include(p => p.UserId).Include(p => p.Accounts).ToList();
+                ViewBag.deposit = red;
+                dbContext.Accounts.Add(money);
+                dbContext.SaveChanges();
+                return RedirectToAction("Dashboard");
+            }
+            return View("Dashboard");
         }
     }
 }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a9c6cb7222d8961a408177316e0d690fc9ff854b"
+    "signature": "257356ab08f3cd5c8a3c33fa74af5bb7f599a204"
   },
   "compilationOptions": {
     "defines": [
@@ -26,13 +26,27 @@
           "Microsoft.AspNetCore.All": "2.0.3",
           "Microsoft.NETCore.App": "2.0.0",
           "MySql.Data": "8.0.12",
-          "MySql.Data.EntityFrameworkCore": "8.0.12"
+          "MySql.Data.EntityFrameworkCore": "8.0.12",
+          "bootstrap": "4.1.3",
+          "bootstrap.sass": "4.1.3"
         },
         "runtime": {
           "Bank.dll": {}
         },
         "compile": {
           "Bank.dll": {}
+        }
+      },
+      "bootstrap/4.1.3": {
+        "dependencies": {
+          "jQuery": "3.0.0",
+          "popper.js": "1.14.0"
+        }
+      },
+      "bootstrap.sass/4.1.3": {
+        "dependencies": {
+          "jQuery": "3.0.0",
+          "popper.js": "1.14.0"
         }
       },
       "Google.Protobuf/3.5.1": {
@@ -46,6 +60,7 @@
           "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
+      "jQuery/3.0.0": {},
       "Libuv/1.10.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
@@ -2404,6 +2419,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "popper.js/1.14.0": {},
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -4053,12 +4069,33 @@
       "serviceable": false,
       "sha512": ""
     },
+    "bootstrap/4.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eyaT3ZkeOGyj3qXmQJziQNyh+bYzNKtx9QrxETNgzqOxWvsvNoGrAr03426N7AMG+VJayKWtjg4FpGYmPhyuTg==",
+      "path": "bootstrap/4.1.3",
+      "hashPath": "bootstrap.4.1.3.nupkg.sha512"
+    },
+    "bootstrap.sass/4.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GyBFzfxCfuKFtI5LeRAEra0+eGALkDjroWlaTUYlBmrR7mCzf1UAZ7HLMa5cnoZ/Cre6AVOVjcUEGYhA6yOgVA==",
+      "path": "bootstrap.sass/4.1.3",
+      "hashPath": "bootstrap.sass.4.1.3.nupkg.sha512"
+    },
     "Google.Protobuf/3.5.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-f2k1VNaB9bfvEsvARzzEL1TZiIpL33KKK3JMH7UANlPlJVptuvsk4qpBZEnz0pORWZOdUHlVwMQuUzFqjJYCxA==",
       "path": "google.protobuf/3.5.1",
       "hashPath": "google.protobuf.3.5.1.nupkg.sha512"
+    },
+    "jQuery/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xFfntV19HzCtKdJWOp/XT9PUY3SslokTDDLFJZdBug36j1XVhw1+vPQ/n7Gd5y+jdpesn5B1m1yn1qIUq57jlA==",
+      "path": "jquery/3.0.0",
+      "hashPath": "jquery.3.0.0.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -5221,6 +5258,13 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "popper.js/1.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SPxZdXknelgQ015wey7GMZvsVdt/SyEmHYORhEp5k/uF9MUk9DPtkn+6dR98fud2hVWJjZm9KKr474+r7WQt+A==",
+      "path": "popper.js/1.14.0",
+      "hashPath": "popper.js.1.14.0.nupkg.sha512"
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",

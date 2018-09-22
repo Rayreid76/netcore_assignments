@@ -13067,11 +13067,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\RaymondDesktop\\Desktop\\netcore\\assignments\\Bank\\Bank.csproj",
+      "projectUniqueName": "C:\\Users\\RaymondDesktop\\Desktop\\netcore\\assignments\\Bank\\Bank.csproj",
       "projectName": "Bank",
-      "projectPath": "c:\\Users\\RaymondDesktop\\Desktop\\netcore\\assignments\\Bank\\Bank.csproj",
+      "projectPath": "C:\\Users\\RaymondDesktop\\Desktop\\netcore\\assignments\\Bank\\Bank.csproj",
       "packagesPath": "C:\\Users\\RaymondDesktop\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\RaymondDesktop\\Desktop\\netcore\\assignments\\Bank\\obj\\",
+      "outputPath": "C:\\Users\\RaymondDesktop\\Desktop\\netcore\\assignments\\Bank\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

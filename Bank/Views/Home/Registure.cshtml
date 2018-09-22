@@ -10,14 +10,14 @@
     <title>Document</title>
 </head>
 <body>
-    @model User
+    @model Person
     <div class="container">
         <div class="text-center">
             <h1>Registure for NuBank</h1>
         </div>
     </div>
     <div class="container">
-        <form asp-action="record" asp-controller="Home" method="POST">
+        <form asp-action="Record" asp-controller="Home" method="POST">
             <div class="for-group">
                 <span asp-validation-for="FirstName"></span>
                 <label asp-for="FirstName"></label>

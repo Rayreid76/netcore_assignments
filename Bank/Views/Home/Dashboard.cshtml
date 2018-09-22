@@ -16,6 +16,42 @@
             <a href="logout"><button class="btn btn-primary">Sign Out</button></a>
         </div>
     </div>
+    <hr>
+    <div class="container">
+        <div class="col-md-3">
+            <h2>@ViewBag.banker.FirstName</h2>
+        </div>
+    </div>
+    @model Accounts
+    <div class="container">
+        <form asp-action="Deposit" asp-controller="Home" method="post">
+            <div class="form-group">
+                <label asp-for="transaction"></label>
+                <input asp-for="transaction">
+            </div>
+            <input type="submit" value="Enter" class="btn btn-dark">
+        </form>
+    </div>
+    <div class="container">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <th>Transaction</th>
+                    <th>Date</th>
+                </tr>
+                @foreach(var item in ViewBag.deposit)
+                {
+                    <tr>
+                        <td>@item.transaction</td>
+                        <td>@item.Update_at</td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

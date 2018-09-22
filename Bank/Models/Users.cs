@@ -31,8 +31,8 @@ namespace Bank.Models
         [Display(Name = "Confirm Password:")]
         [NotMapped]
         public string Confirm {get; set;}
-        public DateTime Created_at {get; set;}
-        public DateTime Updated_at {get; set;}
+        public DateTime Created_at {get; set;} = DateTime.Now;
+        public DateTime Updated_at {get; set;} = DateTime.Now;
         public IEnumerable<Accounts> Accounts {get; set;}
     }
     public class LoginUser
