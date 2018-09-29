@@ -57,7 +57,6 @@ namespace Bank.Controllers
                 return RedirectToAction("Registure");
             }
             Person Banker = dbContext.Users.FirstOrDefault(pp => pp.UserId == validate);
-
             ViewBag.banker = Banker;
             return View("Dashboard");
         }
@@ -98,8 +97,7 @@ namespace Bank.Controllers
         {
             if(ModelState.IsValid)
             {
-                List<Person> red = dbContext.Users.Include(p => p.UserId).Include(p => p.Accounts).ToList();
-                ViewBag.deposit = red;
+                
                 dbContext.Accounts.Add(money);
                 dbContext.SaveChanges();
                 return RedirectToAction("Dashboard");

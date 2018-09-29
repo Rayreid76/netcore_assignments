@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Wedding Planner";
+}
+<div class="container">
+    <h1>Plan Your Wedding</h1>
+    <a href="">Dashboard</a> | <a href="">Log Out</a>
+    <hr>
+</div>
+@model Planner
+<div class="container">
+    <form asp-action="Planner" asp-controller="Home" method="post">
+        <div class="form-group">
+            <span asp-validation-for="Groom"></span>
+            <label asp-for="Groom"></label>
+            <input asp-for="Groom">
+        </div>
+        <div class="form-group">
+            <span asp-validation-for="Bride"></span>
+            <label asp-for="Bride"></label>
+            <input asp-for="Bride">
+        </div>
+        <div class="form-group">
+            <span asp-validation-for="Date"></span>
+            <label asp-for="Date"></label>
+            <input asp-for="Date">
+        </div>
+        <div class="form-group">
+            <span asp-validation-for="Address"></span>
+            <label asp-for="Address"></label>
+            <input asp-for="Address">
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</div>

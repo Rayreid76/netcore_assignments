@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="text-center">
+        <h1>New Products</h1>
+    </div>
+</div>
+@model Product
+<div class="container">
+    <div class="col-md-6">
+        <form asp-action="CreateProduct" asp-controller="Home" method="post">
+            <div class="form-group">
+                <span asp-validation-for="Name"></span>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Description"></span>
+                <label asp-for="Description"></label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Price"></span>
+                <label asp-for="Price"></label>
+                <input asp-for="Price" class="form-control">
+            </div>
+            <input type="submit" value="Enter" class="btn btn-dark">
+        </form>
+    </div>
+</div>

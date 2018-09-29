@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Category</title>
+</head>
+<body>
+    @model Category
+    <div class="container">
+        <div class="text-center">
+            <h1>New Category</h1>
+        </div>
+    </div>
+    <div class="container">
+        <form asp-action="" asp-controller="Home" method="post">
+            <div class="form-group">
+                <span asp-validation-for="NameCategories"></span>
+                <label asp-for="NameCategories"></label>
+                <input asp-for="NameCategories">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

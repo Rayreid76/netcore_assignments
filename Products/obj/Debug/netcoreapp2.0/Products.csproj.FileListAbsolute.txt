@@ -1,0 +1,11 @@
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\bin\Debug\netcoreapp2.0\Products.deps.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\bin\Debug\netcoreapp2.0\Products.runtimeconfig.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\bin\Debug\netcoreapp2.0\Products.runtimeconfig.dev.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\bin\Debug\netcoreapp2.0\Products.dll
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\bin\Debug\netcoreapp2.0\Products.pdb
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\obj\Debug\netcoreapp2.0\Products.csprojResolveAssemblyReference.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\obj\Debug\netcoreapp2.0\Products.csproj.CoreCompileInputs.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\obj\Debug\netcoreapp2.0\Products.AssemblyInfoInputs.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\obj\Debug\netcoreapp2.0\Products.AssemblyInfo.cs
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\obj\Debug\netcoreapp2.0\Products.dll
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\Products\obj\Debug\netcoreapp2.0\Products.pdb

@@ -1,0 +1,11 @@
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\bin\Debug\netcoreapp2.0\WeddingPlan.deps.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\bin\Debug\netcoreapp2.0\WeddingPlan.runtimeconfig.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\bin\Debug\netcoreapp2.0\WeddingPlan.runtimeconfig.dev.json
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\bin\Debug\netcoreapp2.0\WeddingPlan.dll
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\bin\Debug\netcoreapp2.0\WeddingPlan.pdb
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\obj\Debug\netcoreapp2.0\WeddingPlan.csprojResolveAssemblyReference.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\obj\Debug\netcoreapp2.0\WeddingPlan.csproj.CoreCompileInputs.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\obj\Debug\netcoreapp2.0\WeddingPlan.AssemblyInfoInputs.cache
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\obj\Debug\netcoreapp2.0\WeddingPlan.AssemblyInfo.cs
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\obj\Debug\netcoreapp2.0\WeddingPlan.dll
+C:\Users\RaymondDesktop\Desktop\netcore\assignments\WeddingPlan\obj\Debug\netcoreapp2.0\WeddingPlan.pdb
